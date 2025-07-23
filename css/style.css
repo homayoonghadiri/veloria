@@ -147,6 +147,7 @@ p{
     text-align: center;
     width: 30%;
     border-radius: 9px;
+    padding-bottom: 10px;
     box-sizing: border-box;
     box-shadow: rgba(212, 175, 55, 0.4) 0px 5px, rgba(212, 175, 55, 0.3) 0px 10px, rgba(212, 175, 55, 0.2) 0px 15px, rgba(212, 175, 55, 0.1) 0px 20px, rgba(212, 175, 55, 0.05) 0px 25px;
 }
