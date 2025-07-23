@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazir.eot'),
+       url('../fonts/Vazir.woff2') format('woff2')
+       url('../fonts/Vazir.woff') format('woff'),
+       url('../fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'shabnam';
+  src: url('../fonts/Shabnam.eot'),
+       url('../fonts/Shabnam.woff2') format('woff2')
+       url('../fonts/Shabnam.woff') format('woff'),
+       url('../fonts/Shabnam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body{
     background-color: #1a1a1a;
     margin: 0;
@@ -35,7 +55,7 @@ p{
     transition: background-color 0.3s ease;
 }
 
-.cta:hover::before{
+.cta::before{
     content: "";
     position: absolute;
     top: 0;
@@ -83,7 +103,7 @@ p{
     font-style: normal;
     font-size: 95px;
     color: #D4AF37;
-    margin: 30px 0 0 -60px;
+    margin: 0 0 0 -60px;
 }
 
 #hero .hero-content{
@@ -92,25 +112,27 @@ p{
 }
 
 #hero .hero-content-slogan{
-    font-family: 'vazir', sans-serif;
     color: #fafafa;
+    font-size:23px;
+    font-weight: bold;
 }
 
 #hero .hero-content-desc{
     color: #fafafa;
-    font-family: 'shabnam', sans-serif;
     font-size: 18px;
+    font-weight: normal;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(28) 0s infinite;
 }
 
 #hero .hero-content .cta{
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 /* features */
 .features{
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #e7ded1;
@@ -144,7 +166,7 @@ p{
 
 .features .features-item img{
     width: 100%;
-    height: 350px;
+    height: auto;
     border-radius: 8px 8px 0 0;
 }
 
@@ -160,6 +182,7 @@ p{
 
 /* banner */
 .banner{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -199,7 +222,7 @@ footer::before{
 }
 
 .copyright{
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: flex-end;
 }
@@ -221,10 +244,9 @@ footer::before{
 }
 
 .social{
+    width: 40%;
     text-align: left;
-    width: 50%;
     margin-bottom: 30px;
-
 }
 
 .social .social-icon{
@@ -237,7 +259,7 @@ footer::before{
 }
 
 @keyframes typing {
-  from { width: 0 }
+  from { width: 0% }
   to { width: 100% }
 }
 

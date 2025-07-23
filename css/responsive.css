@@ -1,0 +1,147 @@
+/* tablet */
+@media screen and (max-width: 1024px) { 
+    #hero .logo{
+        font-size: 55px;
+    }
+    
+    #hero .hero-brand img{
+        width: 550px;
+        max-width: 500px;
+        height: auto;
+        object-fit: contain;
+        margin-top: -48px;
+    }
+
+    #hero .hero-content-slogan{
+        margin: 0;
+        font-size: 18px;
+    }
+
+    #hero .hero-content-desc{
+        font-size: 16px;
+    }
+
+    .cta{
+        font-size: 17px;
+    }
+
+    .features .features-item h3{
+        font-size: 17px;
+    }
+
+    .features .features-item p{
+        font-size: 14px;
+    }
+
+    .banner .banner-content h2{
+        font-size: 28px;
+    }
+
+    .copyright p{
+        font-size: 15px;
+    }
+
+    footer::before{
+        width: 80%;
+    }
+
+    .social .social-icon{
+        font-size: 27px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    #hero{
+        flex-direction: column;
+        margin-bottom: 45vh;
+    }
+
+    #hero .hero-brand{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #hero .hero-content{
+        width: 100%;
+        order: 2;
+        padding-top: 0;
+        text-align: center;
+    }
+    
+    #hero .logo{
+        font-size: 50px;
+        order: 2;
+        margin: 0;
+    }
+
+    #hero .hero-brand img{
+        width: 450px;
+        max-width: 400px;
+        order: 1;
+        margin: 0 0 30px 0;
+    }
+
+    #hero .hero-content-desc{
+        animation: unset;
+    }
+
+    .features{
+        background-color: unset;
+        flex-direction: column;
+    }
+
+    .features .features-item, .features .features-item:first-child, .features .features-item:last-child{
+        box-shadow: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+    .features .features-item img{
+        width: 100%;
+    }
+
+    .banner{
+        flex-direction: column;
+        padding: 20px 0 40px 0;
+        text-align: center;
+    }
+
+    .banner .banner-content h2{
+        font-size: 24px;
+    }
+
+    footer{
+        flex-direction: column;
+        position: relative;
+    }
+
+    footer::before{
+        width: 63%;
+        top: 40px;
+    }
+
+    .copyright{
+        order: 2;
+        width: 100%;
+    }
+
+    .copyright p{
+        font-size: 14px;
+        margin-right: 12px;
+    }
+
+    .social{
+        order: 1;
+        width: 50%;
+        margin-bottom: 0;
+        position: absolute;
+        top: 75px;
+        left: 0;
+    }
+}
