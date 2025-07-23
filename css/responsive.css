@@ -44,17 +44,13 @@
     footer::before{
         width: 80%;
     }
-
-    .social .social-icon{
-        font-size: 27px;
-    }
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
     #hero{
         flex-direction: column;
-        margin-bottom: 45vh;
+        margin-bottom: 32vh;
     }
 
     #hero .hero-brand{
@@ -93,12 +89,14 @@
     .features{
         background-color: unset;
         flex-direction: column;
+        padding: 0;
+        margin-bottom: 5vh;
     }
 
     .features .features-item, .features .features-item:first-child, .features .features-item:last-child{
         box-shadow: unset;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         
     }
 
@@ -108,12 +106,22 @@
 
     .banner{
         flex-direction: column;
-        padding: 20px 0 40px 0;
+        padding-top: 20px;
         text-align: center;
+    }
+
+    .banner .banner-image{
+        order: 2;
+    }
+
+    .banner-content{
+        order: 1;
+        margin-bottom: 10px;
     }
 
     .banner .banner-content h2{
         font-size: 24px;
+        margin-bottom: 30px;
     }
 
     footer{
@@ -133,7 +141,8 @@
 
     .copyright p{
         font-size: 14px;
-        margin-right: 12px;
+        line-height: 25px;
+        margin: 0 12px 20px 0;
     }
 
     .social{
@@ -141,7 +150,11 @@
         width: 50%;
         margin-bottom: 0;
         position: absolute;
-        top: 75px;
+        top: 60px;
         left: 0;
+    }
+    
+    .social .social-icon{
+        font-size: 27px;
     }
 }
