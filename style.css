@@ -1,0 +1,251 @@
+body{
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #9c9c9c;
+}
+
+h2, h3, h4{
+    font-family: 'shabnam', sans-serif;
+}
+
+p{
+    font-family: 'vazir', sans-serif;
+    color: #9c9c9c;
+}
+
+.cta{
+    background-color: #D4AF37;
+    font-family: 'shabnam', sans-serif;
+    font-size: 18px;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.1), rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+    transform: skewX(-20deg);
+    z-index: 2;
+    animation: shimmer 3s infinite;
+}
+
+/* header */
+#hero{
+    width: 100%;
+    height: 302px;
+    display: flex;
+    margin-bottom: 10vh;
+    box-sizing: border-box;
+}
+
+#hero .hero-brand{
+    width: 71%;
+    display: flex;
+}
+
+#hero .hero-brand img{
+    width: 600px;
+    height: 302px;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+    -moz-mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+    -o-mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+    -ms-mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #1a1a1a 70%, transparent 100%);
+}
+
+#hero .logo{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 95px;
+    color: #D4AF37;
+    margin: 30px 0 0 -60px;
+}
+
+#hero .hero-content{
+    width: 29%;
+    padding-top: 120px;
+}
+
+#hero .hero-content-slogan{
+    font-family: 'vazir', sans-serif;
+    color: #fafafa;
+}
+
+#hero .hero-content-desc{
+    color: #fafafa;
+    font-family: 'shabnam', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(28) 0s infinite;
+}
+
+#hero .hero-content .cta{
+    margin-top: 5px;
+}
+
+/* features */
+.features{
+    display: flex;
+    justify-content: center;
+    background-color: #e7ded1;
+    justify-content: space-evenly;
+    padding: 30px 20px;
+    margin-bottom: 12vh;
+    border-radius: 10px 400px 10px 400px;
+}
+
+.features .features-item{
+    background-color: #fafafa;
+    text-align: center;
+    width: 30%;
+    border-radius: 9px;
+    box-sizing: border-box;
+    box-shadow: rgba(212, 175, 55, 0.4) 0px 5px, rgba(212, 175, 55, 0.3) 0px 10px, rgba(212, 175, 55, 0.2) 0px 15px, rgba(212, 175, 55, 0.1) 0px 20px, rgba(212, 175, 55, 0.05) 0px 25px;
+}
+
+.features .features-item:first-child{
+    box-shadow: rgba(212, 175, 55, 0.4) 5px 5px, rgba(212, 175, 55, 0.3) 10px 10px, rgba(212, 175, 55, 0.2) 15px 15px, rgba(212, 175, 55, 0.1) 20px 20px, rgba(212, 175, 55, 0.05) 25px 25px;
+}
+
+.features .features-item:last-child{
+    box-shadow: 
+  rgba(212, 175, 55, 0.4) -5px -5px,
+  rgba(212, 175, 55, 0.3) -10px -10px,
+  rgba(212, 175, 55, 0.2) -15px -15px,
+  rgba(212, 175, 55, 0.1) -20px -20px,
+  rgba(212, 175, 55, 0.05) -25px -25px;
+}
+
+.features .features-item img{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px 8px 0 0;
+}
+
+.features .features-item h3{
+    color: #4e4e4e;
+    font-size: 18px;
+}
+
+.features .features-item p{
+    color: #4e4e4e;
+    font-size: 15px;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #e7ded1;
+    margin-bottom: 10vh;
+}
+
+.banner .banner-image{
+    width: 350px;
+    height: 312px;
+    transform: scaleX(-1);
+}
+
+.banner .banner-content h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 88%;
+    border-top: 1px solid #9c9c9c;
+    opacity: 0.1;
+}
+
+.copyright{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.copyright img{
+    width: 120px;
+    height: 180px;
+    mask-image: linear-gradient(to right, transparent, #1a1a1a 20%, #1a1a1a 80%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #1a1a1a 20%, #1a1a1a 80%, transparent);
+    -moz-mask-image: linear-gradient(to right, transparent, #1a1a1a 20%, #1a1a1a 80%, transparent);
+    -o-mask-image: linear-gradient(to right, transparent, #1a1a1a 20%, #1a1a1a 80%, transparent);
+    -ms-mask-image: linear-gradient(to right, transparent, #1a1a1a 20%, #1a1a1a 80%, transparent);
+    opacity: 0.6;
+}
+
+.copyright p{
+    margin: 0 20px 30px 0;
+}
+
+.social{
+    text-align: left;
+    width: 50%;
+    margin-bottom: 30px;
+
+}
+
+.social .social-icon{
+    font-size: 30px;
+    margin-right: 7px;
+}
+
+.social a .social-icon{
+    color: #9c9c9c;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -60%;
+  }
+  100% {
+    left: 120%;
+  }
+}
